@@ -1,0 +1,73 @@
+.app-sidebar {
+  width: 30%;
+  height: 100vh;
+  border-right: 1px solid #333;
+  box-sizing: border-box;
+}
+
+.app-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  gap: 10px;
+}
+
+.app-sidebar-notes {
+  height: calc(100vh - 78px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f1f1f1;
+}
+
+.app-sidebar-notes::-webkit-scrollbar {
+  width: 6px;
+}
+
+.app-sidebar-notes::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.app-sidebar-note {
+  padding: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.app-sidebar-note:hover {
+  background-color: rgb(234, 211, 181);
+}
+
+.app-sidebar-note.active {
+  background-color: rgb(216, 190, 162);
+  font-weight: bold;
+}
+
+.sidebar-note-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-sidebar-note p {
+  margin: 10px 0;
+}
+
+.app-sidebar-note small {
+  color: #999;
+}
+
+button {
+  background-color: #0084d4;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #006bb3;
+}
